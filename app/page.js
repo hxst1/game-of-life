@@ -2,7 +2,7 @@ import GameOfLife from "@/app/components/GameOfLife";
 
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen w-full items-center justify-center text-white select-none">
+        <div className="flex flex-col min-h-screen w-full items-center justify-center text-white">
             <h1 className="text-3xl font-bold absolute left-5 top-5 text-white shadow-lg mb-8">Game of Life</h1>
             <a
                 href="https://github.com/hxst1/game-of-life"
@@ -38,7 +38,7 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div>
+                <div className="select-none">
                     <GameOfLife/>
                 </div>
             </div>
