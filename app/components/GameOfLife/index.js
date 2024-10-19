@@ -153,10 +153,10 @@ const GameOfLife = () => {
                     onClick={handleCellClick}
                 />
                 <div className="absolute top-2 left-2 bg-black bg-opacity-50 px-3 py-1 rounded-md text-xs sm:text-sm">
-                    {running ? 'Simulando' : 'Pausado'}
+                    {running ? 'Simulating' : 'Pause'}
                 </div>
                 <div className="absolute top-2 right-2 bg-black bg-opacity-50 px-3 py-1 rounded-md text-xs sm:text-sm">
-                    Ciclo de vida: {generation}
+                    Cycle: {generation}
                 </div>
             </div>
             <div className="flex flex-wrap justify-center gap-4 mb-4">
