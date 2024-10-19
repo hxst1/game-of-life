@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Conway's Game of Life
 
-## Getting Started
+This project is a modern and minimalist implementation of the famous Conway's Game of Life, developed with Next.js and styled with Tailwind CSS.
 
-First, run the development server:
+## Features
 
-```bash
+- Complete implementation of Conway's Game of Life
+- Minimalist and modern user interface
+- Interactive controls to start, pause, and randomize the simulation
+- Ability to activate/deactivate cells by clicking on them
+- Responsive and accessible design
+
+## Prerequisites
+
+Make sure you have the following installed on your system:
+
+- Node.js (version 14 or higher)
+- npm (usually comes with Node.js)
+
+## Installation
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/hxst1/game-of-life.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd game-of-life
+   ```
+
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+## Execution
+
+To run the project in development mode:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## How to Play
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. When the page loads, you'll see an empty grid.
+2. Click on the cells to activate them (they will turn turquoise).
+3. Use the "Start" button to begin the simulation.
+4. Use the "Pause" button to stop the simulation at any time.
+5. Use the "Randomize" button to activate random cells.
+6. You can continue clicking on cells to activate or deactivate them even during the simulation.
 
-## Learn More
+## Rules of the Game of Life
 
-To learn more about Next.js, take a look at the following resources:
+1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.
+2. Any live cell with two or three live neighbors lives on to the next generation.
+3. Any live cell with more than three live neighbors dies, as if by overpopulation.
+4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome. Please open an issue to discuss the changes you would like to make.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
